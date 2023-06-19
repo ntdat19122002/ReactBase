@@ -3,7 +3,7 @@ const express = require('express')
 const cors = require('cors')
 const bodyParser = require('body-parser')
 const connectDB = require('./config/connectDB')
-const initRoutes = require('./route/user')
+const initRoutes = require('./route/route')
 
 const app = express()
 

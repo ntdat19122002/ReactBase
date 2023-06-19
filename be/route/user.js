@@ -1,11 +1,11 @@
 const express = require('express')
-const homeController = require('../controllers/homeController')
+const userController = require('../controllers/userController')
 const router = express.Router()
 
-let initRoutes = (app)=>{
-    router.get('/', homeController.getHomePage)
+let initRoutesUser = (app)=>{
+    router.get('/', userController.getUserPage)
 
-    return app.use('/',router)
+    return app.use('/api',router)
 }
 
-module.exports = initRoutes
+module.exports = initRoutesUser
